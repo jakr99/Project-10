@@ -2,4 +2,7 @@ Jacob Lee
 1. the output shows all the of files in my directory. * matches any character in filenames except for a dot.
 2. this output shows all the hidden files and directories in my current directory. This is probably because the . is used for hidden files and the * doesn't pick up on the . so you have to tell it to. 
 3. you should never run these because they will delete all files in the current directory with no way of recovering them. 
+4. I would sort the list by file modification time by using the comman ls -tr
+5. I would use the command cat -n "insert filename"
+6. The whatis command is used to search and display brief descriptions of Linux commands
 
