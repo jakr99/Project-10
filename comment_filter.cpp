@@ -1,14 +1,20 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <fstream>
+#include <string>
 
-using std::cout;
-using std::endl;
-using std::cin;
+int main() {
+    std::ifstream inputFile("story.txt");  
+    std::ofstream outputFile("betterstory.txt");  
+    
+    std::string line;
+    while (std::getline(inputFile, line)) {
+        if (!line.empty() && line[0] != '#') {
+            outputFile << line << std::endl;
+        }
+    }
 
-int main() 
-{
-    // Write your program here.
+    inputFile.close();
+    outputFile.close();
 
     return 0;
 }
-
